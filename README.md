@@ -8,4 +8,6 @@
 
 ## Screenshots
 
-<div align=center> <img src="Screenshots/web_ss.png" width=500px height= 250px> <img src="Screenshots/webss_light.png" width=500px height= 250px> </div>
+<div align=left> <img src="Screenshots/web_ss.png" width=500px height= 250px>  </div>
+
+<div align=right> <img src="Screenshots/webss_light.png" width=500px height= 250px> </div>
