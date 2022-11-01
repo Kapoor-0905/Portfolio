@@ -25,9 +25,9 @@ class MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (_) => AppProvider()),
-        ChangeNotifierProvider(create: (_) => DrawerProvider()),
-        ChangeNotifierProvider(create: (_) => ScrollProvider()),
+        ChangeNotifierProvider(create: (_) => AppProvider()), // App Provider for Theme and Language Change and other stuff like that in future updates :)
+        ChangeNotifierProvider(create: (_) => DrawerProvider()), // Drawer Provider for Drawer State Change :)
+        ChangeNotifierProvider(create: (_) => ScrollProvider()), // Scroll Provider for Scroll State Change :)
       ],
       child: Consumer<AppProvider>(
         builder: (context, value, _) => MaterialChild(
@@ -65,7 +65,7 @@ class _MaterialChildState extends State<MaterialChild> {
       title: 'Ashutosh',
       theme: theme.themeLight,
       darkTheme: theme.themeDark,
-      themeMode: widget.provider.themeMode,
+      themeMode: widget.provider.themeMode, // Theme Mode
       initialRoute: "/",
       routes: {
         "/": (context) => const MainPage(),
