@@ -18,9 +18,6 @@ class ProjectUtils {
     "assets/projects/chatapp.png",
     "assets/projects/omusigator.png",
     "assets/projects/earbender.png",
-    "assets/projects/java.png",
-    "assets/projects/android.png",
-    "assets/services/open_b.png",
   ];
 
   static const List<String> titles = [
@@ -32,9 +29,6 @@ class ProjectUtils {
     "Chat App",
     "OMusigator",
     "Earbender",
-    "File Transfer Protocol",
-    "My Order",
-    "Hidev",
   ];
 
   static const List<String> description = [
@@ -46,9 +40,6 @@ class ProjectUtils {
     "An app used to chat in groups. Anyone can join any group as its open-source. Made with Flutter and Firebase. "
         "A web app built on HTML, CSS, JS to transfer your playlist from Spotify to YouTube using Python and Google API. ",
     "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
-    "A simple GUI based Java application that sends file from Client to Server but not the other way around.",
-    "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
-    "Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
   ];
 
   static const List<String> links = [
@@ -58,9 +49,7 @@ class ProjectUtils {
     "https://github.com/Kapoor-0905/EarTone",
     "https://github.com/upes-open/Event-Planning-Application",
     "https://github.com/Kapoor-0905/Chat-App",
-    "https://github.com/mhmzdev/Earbender_Music_App",
+    "https://github.com/upes-open/OMusigator",
     "https://github.com/mhmzdev/FTP_GUI_Java",
-    "https://github.com/mhmzdev/My-Order-Resturant-Ordering-System",
-    "https://github.com/mhmzdev/Hidev_Web",
   ];
 }
