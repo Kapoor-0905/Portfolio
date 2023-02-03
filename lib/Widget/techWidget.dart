@@ -9,7 +9,8 @@ class ToolTechWidget extends StatelessWidget {
   const ToolTechWidget({Key? key, required this.techName}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return Wrap(
+      crossAxisAlignment: WrapCrossAlignment.center,
       children: [
         Icon(
           Icons.play_arrow,

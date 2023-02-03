@@ -90,7 +90,7 @@ class ProjectCardState extends State<ProjectCard> {
                     ? (width > 1135 || width < 950)
                         ? Image.asset(
                             widget.projectIcon!,
-                            height: height * 0.05,
+                            height: height * 0.07,
                           )
                         : Row(
                             mainAxisSize: MainAxisSize.min,

@@ -77,17 +77,12 @@ class HomeMobile extends StatelessWidget {
                     AnimatedTextKit(
                       animatedTexts: [
                         TyperAnimatedText(
-                          ' App Developer',
+                          ' Flutter Developer',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
                         ),
                         TyperAnimatedText(
-                          ' Data Science Enthusiast',
-                          speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
-                        ),
-                        TyperAnimatedText(
-                          ' External Collaboration Lead ',
+                          ' External Collaboration Lead',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
                         ),

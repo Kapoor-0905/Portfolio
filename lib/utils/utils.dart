@@ -33,7 +33,8 @@ class StaticUtils {
     "https://img.icons8.com/android/480/ffffff/twitter.png",
     "https://img.icons8.com/metro/308/ffffff/linkedin.png",
     "https://img.icons8.com/material-rounded/384/ffffff/github.png",
-
+    "https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png",
+    "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/codewars-512.png",
   ];
 
   static const List<String> socialLinks = [
@@ -41,6 +42,8 @@ class StaticUtils {
     "https://twitter.com/kapoor_0905",
     "https://linkedin.com/in/kapoor0905",
     "https://github.com/Kapoor-0905",
+    "https://leetcode.com/Kapoor-0905/",
+    "https://www.codewars.com/users/Kapoor-0905",
   ];
 
   static const String resume =
