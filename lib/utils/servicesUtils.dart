@@ -2,26 +2,23 @@ import '../utils/utils.dart';
 
 class ServicesUtils {
   static const List<String> servicesIcons = [
-    StaticUtils.appDev,
+    StaticUtils.opencommunity,
+    StaticUtils.internship,
     StaticUtils.hackathon,
-    StaticUtils.rapid,
-    //StaticUtils.blog,
-    StaticUtils.openSource,
+    StaticUtils.contribute,
   ];
 
   static const List<String> servicesTitles = [
-    "Mobile App Development",
-    "Hackathon",
-    "Hacktoberfest 2022",
-    //"Technical Blog Writing",
-    "Open Source - GitHub",
+    "OPEN Community",
+    "Internships",
+    "Hackathons",
+    "Open source",
   ];
 
   static const List<String> servicesDescription = [
-    "App development \n- Using Android Studio (Java,XML)\n- Using Flutter \n- Splash Screen\n",
-    "CSA Hackathon 1.0\n- HTML,CSS\n- PHP\n- Interactive UI designs\n- Responsiveness\n- Made it till the final evaluation...",
-    "Hacktoberfest 2022\n- Level 4 Contributor\n- Successfully Merged 5 PRs",
-    //"Technical Blog writing\n- Medium blogs\n- Soothing header images\n- SEO friendly\n- Researched topics and more..!",
-    "Open source GitHub \n- Blog for Golang basics\n- Well documented\n",
+    "- Started as Student Developer\n- Promoted to Lead Student Developer\n- Promoted to External Collaboration Lead\n- Mentored 2 Projects\n- Organized 3 Events\n- Speaker of GitHub Workshop",
+    "1. Government Funded Project-Department of Science and Technology-with UPES. \n",
+    "- CSA Hackathon 1.0\n\n- SheBuilds\n\n- IBM CodeWars",
+    "- Hacktoberfest 2022\n\n- GitHub",
   ];
 }

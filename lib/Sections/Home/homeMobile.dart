@@ -82,7 +82,7 @@ class HomeMobile extends StatelessWidget {
                           textStyle: AppText.b1,
                         ),
                         TyperAnimatedText(
-                          ' External Collaboration Lead',
+                          ' Collaboration Manager',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
                         ),

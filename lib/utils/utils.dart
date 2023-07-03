@@ -20,10 +20,10 @@ class StaticUtils {
   static const String open = 'assets/work/open.png';
 
   // services
+  static const String opencommunity = 'assets/services/openLogo.png';
+  static const String internship = 'assets/services/internship.png';
   static const String hackathon = 'assets/services/hackathon.png';
-  static const String blog = 'assets/services/blog.png';
-  static const String appDev = 'assets/services/app.png';
-  static const String rapid = 'assets/services/hacktoberfest.png';
+  static const String contribute = 'assets/services/opensource.png';
   static const String openSource = 'assets/services/open.png';
   static const String openSourceBlack = 'assets/services/open_b.png';
 

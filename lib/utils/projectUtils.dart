@@ -1,17 +1,15 @@
 class ProjectUtils {
   static const List<String> banners = [
     "assets/projects/crypto.png",
-    "assets/projects/quranB.png",
-    "assets/projects/medkitB.png",
-    "assets/projects/hereiamB.png",
-    "assets/projects/planner.png",
-    "assets/projects/chatapp.png",
-    "assets/projects/omusigator.png",
+    "assets/projects/amazonBanner.png",
+    "assets/projects/eartoneBanner.jpg",
+    "assets/projects/plannerBanner.jpeg",
+    "assets/projects/chatappBanner.jpg",
+    "assets/projects/musigatorBanner.png",
   ];
 
   static const List<String> icons = [
     "assets/projects/cca.png",
-    "assets/projects/car.png",
     "assets/projects/amazon.png",
     "assets/projects/Eartone.png",
     "assets/projects/planner.png",
@@ -22,7 +20,6 @@ class ProjectUtils {
 
   static const List<String> titles = [
     "Crypto Currency Analysis",
-    "Automated Parking System",
     "Amazon UI Clone",
     "EarTone",
     "Planner",
@@ -33,7 +30,6 @@ class ProjectUtils {
 
   static const List<String> description = [
     "A Data science project where we analyzed, visualized and predicted static stata of crypto currencies.",
-    "An IOT based project which will automate the parking system by generating a token. It will be implemented in our university.",
     "Created the UI clone of Amazon Shopping app using Flutter.",
     "Music player app which will play music from your local storage made with Java and XML on Android Studio.",
     "This app streamlines gifting, idea collection, event planning, and preparation. It allows you to schedule gifts and collect ideas, saving time and simplifying the planning process. Never forget an important event again.",
@@ -44,7 +40,6 @@ class ProjectUtils {
 
   static const List<String> links = [
     "https://github.com/upes-open/Open-Cryptocurrency-Analysis",
-    "https://github.com/upes-open/OSC-Automated-Parking_System",
     "https://github.com/Kapoor-0905/Flutter-Amazon-UI-Clone",
     "https://github.com/Kapoor-0905/EarTone",
     "https://github.com/upes-open/Event-Planning-Application",

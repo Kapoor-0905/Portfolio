@@ -35,7 +35,7 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                 .entries
                 .map(
                   (e) => ProjectCard(
-                    //banner: e.value,
+                    banner: e.value,
                     projectIcon: ProjectUtils.icons[e.key],
                     projectLink: ProjectUtils.links[e.key],
                     projectTitle: ProjectUtils.titles[e.key],
