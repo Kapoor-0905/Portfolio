@@ -1,23 +1,35 @@
-# Use the official Flutter image as the base image
-FROM cirrusci/flutter:latest
+# Use a custom base image with Flutter dependencies
+FROM ubuntu:latest
 
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the app source code to the container
+# Install necessary dependencies for Flutter
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends curl git unzip xz-utils libglu1-mesa
+
+# Download and install Flutter SDK
+ENV FLUTTER_HOME=/usr/local/flutter
+ENV PATH=$FLUTTER_HOME/bin:$PATH
+RUN curl -L https://storage.googleapis.com/flutter_infra/releases/stable/linux/flutter_linux_2.2.3-stable.tar.xz | tar xJ -C /usr/local/
+
+# Run Flutter doctor to download Flutter dependencies
+RUN flutter doctor
+
+# Copy the Flutter application to the container
 COPY . .
 
-# Install Flutter dependencies (if you have any additional dependencies)
-RUN flutter pub get
+# Build the Flutter application
+RUN flutter build apk
 
-# Build the Flutter app for release (change the --release flag to --debug for debugging)
-RUN flutter build apk --release
-
-# Optionally, you can run the app with "flutter run" command if you want to test it within the container
+# (Optional) If you need to run the app during the build, uncomment the following line
 # RUN flutter run
 
-# Set the entry point for the container to the built Flutter app
-ENTRYPOINT ["flutter", "run", "--release"]
+# (Optional) If you need to specify additional Flutter environment variables, uncomment and set them here
+# ENV FLUTTER_ENV=production
 
-# If you prefer running the Flutter app in a web environment, you can use the following instead:
-# ENTRYPOINT ["flutter", "run", "-d", "web-server", "--release"]
+# (Optional) If you want to expose a port, uncomment and set it here
+# EXPOSE 8080
+
+# (Optional) If you want to specify a command to run the Flutter app when the container starts, uncomment and set it here
+# CMD ["flutter", "run", "--release", "-d", "web-server", "--web-port", "8080"]
