@@ -6,7 +6,6 @@ import 'package:portfolio/provider/appProvider.dart';
 import 'package:provider/provider.dart';
 
 class ProjectCard extends StatefulWidget {
-  final String? banner;
   final String? projectLink;
   final String? projectIcon;
   final String projectTitle;
@@ -15,7 +14,6 @@ class ProjectCard extends StatefulWidget {
 
   const ProjectCard({
     Key? key,
-    this.banner,
     this.projectIcon,
     this.projectLink,
     this.projectIconData,
@@ -140,18 +138,6 @@ class ProjectCardState extends State<ProjectCard> {
                   height: height * 0.01,
                 ),
               ],
-            ),
-            AnimatedOpacity(
-              duration: const Duration(milliseconds: 400),
-              opacity: isHover ? 0.0 : 1.0,
-              child: FittedBox(
-                fit: BoxFit.fill,
-                child: widget.banner != null
-                    ? Image.asset(
-                        widget.banner!,
-                      )
-                    : Container(),
-              ),
             ),
           ],
         ),

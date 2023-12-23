@@ -30,12 +30,12 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
             alignment: WrapAlignment.center,
             crossAxisAlignment: WrapCrossAlignment.center,
             runSpacing: AppDimensions.normalize(10),
-            children: ProjectUtils.banners
+            children: ProjectUtils.icons
                 .asMap()
                 .entries
                 .map(
                   (e) => ProjectCard(
-                    banner: e.value,
+                    // banner: e.value,
                     projectIcon: ProjectUtils.icons[e.key],
                     projectLink: ProjectUtils.links[e.key],
                     projectTitle: ProjectUtils.titles[e.key],

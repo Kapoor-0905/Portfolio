@@ -15,7 +15,6 @@ final kTools = [
   "C",
   "HTML",
   "CSS",
-  "SQL"
 ];
 
 class Constants {

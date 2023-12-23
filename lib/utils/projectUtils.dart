@@ -5,7 +5,8 @@ class ProjectUtils {
     "assets/projects/eartoneBanner.jpg",
     "assets/projects/plannerBanner.jpeg",
     "assets/projects/chatappBanner.jpg",
-    "assets/projects/musigatorBanner.png",
+    "assets/projects/commonLogin.png",
+    // "assets/projects/musigatorBanner.png",
   ];
 
   static const List<String> icons = [
@@ -14,8 +15,8 @@ class ProjectUtils {
     "assets/projects/Eartone.png",
     "assets/projects/planner.png",
     "assets/projects/chatapp.png",
-    "assets/projects/omusigator.png",
-    "assets/projects/earbender.png",
+    "assets/projects/applogo.png",
+    "assets/projects/logo.png",
   ];
 
   static const List<String> titles = [
@@ -24,8 +25,8 @@ class ProjectUtils {
     "EarTone",
     "Planner",
     "Chat App",
-    "OMusigator",
-    "Earbender",
+    "Swastha Aur Abhimaan",
+    "MuscleGrm"
   ];
 
   static const List<String> description = [
@@ -33,9 +34,9 @@ class ProjectUtils {
     "Created the UI clone of Amazon Shopping app using Flutter.",
     "Music player app which will play music from your local storage made with Java and XML on Android Studio.",
     "This app streamlines gifting, idea collection, event planning, and preparation. It allows you to schedule gifts and collect ideas, saving time and simplifying the planning process. Never forget an important event again.",
-    "An app used to chat in groups. Anyone can join any group as its open-source. Made with Flutter and Firebase. "
-        "A web app built on HTML, CSS, JS to transfer your playlist from Spotify to YouTube using Python and Google API. ",
-    "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
+    "An app used to chat in groups. Anyone can join any group as its open-source. Made with Flutter and Firebase. ",
+    "An android app which helps people of rural areas to connect with the teacher, doctor connected in this application, and get consulations",
+    "An platform with low trainer charges and high valuable data particularly for gym freaks who aims for body building career.",
   ];
 
   static const List<String> links = [
@@ -44,7 +45,7 @@ class ProjectUtils {
     "https://github.com/Kapoor-0905/EarTone",
     "https://github.com/upes-open/Event-Planning-Application",
     "https://github.com/Kapoor-0905/Chat-App",
-    "https://github.com/upes-open/OMusigator",
-    "https://github.com/mhmzdev/FTP_GUI_Java",
+    "https://github.com/Kapoor-0905/Swastha-Aur-Abhimaan",
+    "https://github.com/Muscle-Grm/musclegrm",
   ];
 }

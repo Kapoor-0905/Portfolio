@@ -32,8 +32,9 @@ class StaticUtils {
     "https://img.icons8.com/android/480/ffffff/twitter.png",
     "https://img.icons8.com/metro/308/ffffff/linkedin.png",
     "https://img.icons8.com/material-rounded/384/ffffff/github.png",
-    "https://cdn.iconscout.com/icon/free/png-256/leetcode-3521542-2944960.png",
-    "https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/codewars-512.png",
+    // "https://icons8.com/icon/PlozTIZdV8xJ/codewars",
+    "https://img.icons8.com/external-tal-revivo-color-tal-revivo/24/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-color-tal-revivo.png",
+    "https://img.icons8.com/material-outlined/96/codewars.png"
   ];
 
   static const List<String> socialLinks = [
@@ -46,7 +47,7 @@ class StaticUtils {
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1RLsJyvlxflnH_U7OuaxiMPkHatUUBv3a/view?usp=sharing';
+      'https://docs.google.com/document/d/1JHtADs4ymVygIzFSfv8Wo-4pemuv7CZI1FRUCgsbtDE/edit?usp=sharing';
 
   static const String gitHub = 'https://github.com/Kapoor-0905';
 }
