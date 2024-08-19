@@ -1,13 +1,16 @@
-<div align=center>
+# kapoor_0905
 
-# Ashutosh Kapoor
-</div>
+A new Flutter project.
 
-### Welcome to my portfolio. 
-> This portfolio is completely built on Flutter. It is complatible with Website, mobile application and Tablets.
+## Getting Started
 
-## Screenshots
+This project is a starting point for a Flutter application.
 
-<div align=left> <img src="Screenshots/web_ss.png" width=500px height= 250px>  </div>
+A few resources to get you started if this is your first Flutter project:
 
-<div align=right> <img src="Screenshots/webss_light.png" width=500px height= 250px> </div>
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

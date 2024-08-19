@@ -1,4 +1,16 @@
 {
+  "flutter": {
+    "platforms": {
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "kapoor-0905",
+          "configurations": {
+            "web": "1:683251445037:web:b753f913915771ce30f7a4"
+          }
+        }
+      }
+    }
+  },
   "hosting": {
     "public": "build/web",
     "ignore": [

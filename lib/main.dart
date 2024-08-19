@@ -1,95 +1,34 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:portfolio/provider/appProvider.dart';
-import 'package:portfolio/provider/drawerProvider.dart';
-import 'package:portfolio/provider/scrollProvider.dart';
-import 'package:portfolio/sections/main/mainSection.dart';
-import 'package:provider/provider.dart';
-import 'package:url_strategy/url_strategy.dart';
-import 'package:portfolio/constants.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:portfolio/configs/coreTheme.dart' as theme;
+import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:kapoor_0905/firebase_options.dart';
+import 'package:kapoor_0905/splash.dart';
 
-void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  setPathUrlStrategy();
-
-  if (kIsWeb) {
-    await Firebase.initializeApp(
-      options: FirebaseOptions(
-        apiKey: Constants.apiKey,
-        appId: Constants.appId,
-        messagingSenderId: Constants.messagingSenderId,
-        projectId: Constants.projectId,
-      ),
-    );
-  }
-  runApp(const MyApp());
+Future<void> main() async {
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  runApp(const ProviderScope(child: MyApp()));
 }
 
-class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
-  @override
-  MyAppState createState() => MyAppState();
-}
-
-class MyAppState extends State<MyApp> {
-  @override
-  Widget build(BuildContext context) {
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(
-            create: (_) =>
-                AppProvider()), // App Provider for Theme and Language Change and other stuff like that in future updates :)
-        ChangeNotifierProvider(
-            create: (_) =>
-                DrawerProvider()), // Drawer Provider for Drawer State Change :)
-        ChangeNotifierProvider(
-            create: (_) =>
-                ScrollProvider()), // Scroll Provider for Scroll State Change :)
-      ],
-      child: Consumer<AppProvider>(
-        builder: (context, value, _) => MaterialChild(
-          provider: value,
-        ),
-      ),
-    );
-  }
-}
-
-class MaterialChild extends StatefulWidget {
-  final AppProvider provider;
-  const MaterialChild({Key? key, required this.provider}) : super(key: key);
-
-  @override
-  State<MaterialChild> createState() => _MaterialChildState();
-}
-
-class _MaterialChildState extends State<MaterialChild> {
-  void initAppTheme() {
-    final appProviders = AppProvider.state(context);
-    appProviders.init();
-  }
-
-  @override
-  void initState() {
-    initAppTheme();
-    super.initState();
-  }
-
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Ashutosh',
-      theme: theme.themeLight,
-      darkTheme: theme.themeDark,
-      themeMode: widget.provider.themeMode, // Theme Mode
-      initialRoute: "/",
-      routes: {
-        "/": (context) => const MainPage(),
-      },
+      title: 'Ashutosh Kapoor',
+      theme: ThemeData(
+          scaffoldBackgroundColor: Colors.white,
+          useMaterial3: true,
+          bottomSheetTheme: const BottomSheetThemeData(
+            backgroundColor: Colors.transparent,
+          ),
+          bottomAppBarTheme:
+              const BottomAppBarTheme(color: Colors.transparent)),
+      home: const Splash(),
     );
   }
 }
