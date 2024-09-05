@@ -43,6 +43,7 @@ dependencies:
   toast: ^0.3.0
   fluttertoast: ^8.2.8
   firebase_core: ^2.24.2
+  shimmer: ^3.0.0
 
 dev_dependencies:
   flutter_test:
@@ -72,7 +73,13 @@ flutter:
   assets:
     - assets/icons/
     - assets/images/
+    - assets/images/quickcare/
+    - assets/images/musclegrm/
+    - assets/images/career/
+    - assets/images/jancare/
+    - assets/images/curiosify/
     - assets/svg/
+    - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

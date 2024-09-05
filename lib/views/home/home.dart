@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:kapoor_0905/responsive.dart';
 import 'package:kapoor_0905/views/home/homeDesktop.dart';
+import 'package:kapoor_0905/views/home/homeMobile.dart';
 
 class Home extends ConsumerStatefulWidget {
   const Home({super.key});
@@ -13,6 +14,6 @@ class Home extends ConsumerStatefulWidget {
 class _HomeState extends ConsumerState<Home> {
   @override
   Widget build(BuildContext context) {
-    return const Responsive(desktop: HomeDesktop(), mobile: Scaffold());
+    return const Responsive(desktop: HomeDesktop(), mobile: HomeMobile());
   }
 }

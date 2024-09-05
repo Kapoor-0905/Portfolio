@@ -6,6 +6,10 @@ extension Widgetextensions on Widget {
     return Expanded(flex: flex, child: this);
   }
 
+  Center center() {
+    return Center(child: this);
+  }
+
   GestureDetector onTap({required Function() onTap}) {
     return GestureDetector(
       onTap: onTap,

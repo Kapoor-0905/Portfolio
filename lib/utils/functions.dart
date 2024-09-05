@@ -32,6 +32,27 @@ String integerMonthToString() {
   }
 }
 
+String getDayFromDate(DateTime date) {
+  switch (date.weekday) {
+    case 1:
+      return "Monday";
+    case 2:
+      return "Tuesday";
+    case 3:
+      return "Wednesday";
+    case 4:
+      return "Thursday";
+    case 5:
+      return "Friday";
+    case 6:
+      return "Saturday";
+    case 7:
+      return "Sunday";
+    default:
+      return "Unknown";
+  }
+}
+
 void openLink(String link) async {
   final uri = Uri.parse(link);
   if (await canLaunchUrl(uri)) {
@@ -44,20 +65,46 @@ void openLink(String link) async {
   }
 }
 
-void openMailto() async {
-  final Uri params = Uri(
+void openLinkM(String link) async {
+  final uri = Uri.parse(link);
+  if (await canLaunchUrl(uri)) {
+    await launchUrl(
+      uri,
+      mode: LaunchMode.externalApplication, // Default for mobile
+    );
+  } else {
+    throw 'Could not launch $link';
+  }
+}
+
+void openEmailApp(String emailAddress) async {
+  final Uri emailUri = Uri(
     scheme: 'mailto',
-    path: 'ashutoshkapoor8965@gmail.com',
-    query: 'subject=Hello&body=How are you?',
+    path: emailAddress,
+    query: '', // You can add subject and body here
   );
 
-  if (await canLaunchUrl(params)) {
-    await launchUrl(params, mode: LaunchMode.externalApplication);
+  if (await canLaunchUrl(emailUri)) {
+    await launchUrl(emailUri);
   } else {
-    throw 'Could not launch $params';
+    // Handle the case where the email app is not available
+    throw 'Could not launch email app';
   }
 }
 
 copyToClipboard(String text) {
   Clipboard.setData(ClipboardData(text: text));
+}
+
+void sendEmail() {
+  String email = "ashutoshkapoor8965@gmail.com";
+}
+
+makingPhoneCall() async {
+  var url = Uri.parse("tel:7088206475");
+  if (await canLaunchUrl(url)) {
+    await launchUrl(url);
+  } else {
+    throw 'Could not launch $url';
+  }
 }

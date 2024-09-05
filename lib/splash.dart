@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:kapoor_0905/utils/assets.dart';
 import 'package:kapoor_0905/utils/extensions.dart';
-import 'package:kapoor_0905/views/home/homeDesktop.dart';
+import 'package:kapoor_0905/views/home/home.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -17,7 +17,7 @@ class _SplashState extends State<Splash> {
     // TODO: implement initState
     super.initState();
     Future.delayed(const Duration(seconds: 2), () {
-      nextPageFade(context: context, page: const HomeDesktop());
+      nextPageFade(context: context, page: const Home());
     });
   }
 

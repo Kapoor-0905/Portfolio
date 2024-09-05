@@ -1,5 +1,8 @@
 class Assets {
   // common
+
+  static const String consumeMusic = "assets/conusme.mp3";
+
   static const String main = "assets/icons/main.png";
   static const String mail = "assets/icons/mail.png";
   static const String contact = "assets/icons/contact.png";
@@ -13,11 +16,16 @@ class Assets {
   static const String healthfitness = "assets/icons/healthfitness.png";
   static const String rupee = "assets/icons/rupee.png";
 
+  static const String applelogo = "assets/icons/apple-logo.png";
   static const String appleIcon = "assets/svg/apple.svg";
   static const String android = "assets/svg/android.svg";
   static const String company = "assets/svg/company.svg";
+  static const String applemusic = "assets/svg/apple-music.svg";
+  static const String whatsapp = "assets/svg/whatsapp.svg";
 
   static const String bg = "assets/images/bg.jpeg";
+  static const String bg1 = "assets/images/bg1.webp";
+  static const String consume = "assets/images/consume.jpeg";
   static const String me = "assets/images/me.png";
   static const String ashutosh = "assets/images/ashutosh.jpg";
   static const String crezam = "assets/images/crezam.png";
@@ -34,6 +42,7 @@ class Assets {
   static const String jancarebg = "assets/images/jancarebg.png";
   static const String curiosify = "assets/images/curiosify.png";
   static const String curiosifybg = "assets/images/curiosifybg.png";
+  static const String applemusicpng = "assets/icons/apple-music.png";
 
   static const String figma = "assets/svg/Figma.svg";
   static const String firebase = "assets/svg/Firebase.svg";
