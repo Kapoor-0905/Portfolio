@@ -61,7 +61,7 @@ class _AboutMobileFullState extends State<AboutMobileFull> {
             ),
             const SizedBox(height: 5),
             Text(
-              'ashutoshkapoor8965@gmail.com',
+              'ashutoshkapoor.official@outlook.com',
               style: nunito.regularText(fontSize: 14, color: Colors.blue),
             ),
             const SizedBox(height: 20),

@@ -127,7 +127,7 @@ class _ContactMobileState extends State<ContactMobile> {
                     ],
                   ),
                 ).onTap(onTap: () {
-                  copyToClipboard("ashutoshkapoor8965@gmail.com");
+                  copyToClipboard("ashutoshkapoor.official@outlook.com");
                 }),
                 const SizedBox(width: 10),
                 Container(
@@ -190,7 +190,7 @@ class _ContactMobileState extends State<ContactMobile> {
                   ),
                   const SizedBox(height: 5),
                   Text(
-                    "ashutoshkapoor8965@gmail.com",
+                    "ashutoshkapoor.official@outlook.com",
                     style: nunito.regularText(
                       fontSize: 14,
                       color: Colors.blue,

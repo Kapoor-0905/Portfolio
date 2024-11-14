@@ -58,10 +58,14 @@ dev_dependencies:
   riverpod_lint: ^2.3.10
   custom_lint: ^0.6.4
   build_runner: ^2.4.10
+  flutter_launcher_icons: ^0.14.1
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+flutter_launcher_icons:
+  web:
+    generate: true
+    image_path: "assets/icons/appicon.png"
 # The following section is specific to Flutter packages.
 flutter:
   # The following line ensures that the Material Icons font is

@@ -313,7 +313,7 @@ class _HomeMobileState extends State<HomeMobile> with TickerProviderStateMixin {
                           width: 60,
                         ),
                       ).onTap(onTap: () {
-                        openLink(r"mailto:ashutoshkapoor8965@gmail.com");
+                        openLink(r"mailto:ashutoshkapoor.official@outlook.com");
                       }),
 
                       MouseRegion(

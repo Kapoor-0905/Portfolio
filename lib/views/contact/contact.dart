@@ -243,7 +243,7 @@ class _ContactState extends State<Contact> with TickerProviderStateMixin {
                           )
                         ],
                       ).onTap(onTap: () {
-                        copyToClipboard("ashutoshkapoor8965@gmail.com");
+                        copyToClipboard("ashutoshkapoor.official@outlook.com");
                         Fluttertoast.showToast(
                           msg: "Mail copied to clipboard",
                           webPosition: "center",
@@ -308,7 +308,7 @@ class _ContactState extends State<Contact> with TickerProviderStateMixin {
                         style: nunito.mediumText(fontSize: 14),
                         children: [
                           TextSpan(
-                            text: "ashutoshkapoor8965@gmail.com",
+                            text: "ashutoshkapoor.official@outlook.com",
                             style: nunito.mediumText(fontSize: 14),
                           ),
                         ],

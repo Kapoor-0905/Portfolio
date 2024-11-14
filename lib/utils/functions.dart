@@ -97,7 +97,7 @@ copyToClipboard(String text) {
 }
 
 void sendEmail() {
-  String email = "ashutoshkapoor8965@gmail.com";
+  String email = "ashutoshkapoor.official@outlook.com";
 }
 
 makingPhoneCall() async {
